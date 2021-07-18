@@ -1,17 +1,13 @@
+// Import the React and ReactDOM libraries. 
+// Note React and ReactDOM could be renamed to other things, but convention 
+// says we'll name it React and ReactDOM
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// Create a react component
+const App = () => {
+    return <div>Hi there!</div>;
+};
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// Take the react component and show it on the screen.
+ReactDOM.render(<App />, document.querySelector('#root'));
